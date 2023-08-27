@@ -1,20 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-body{
-    font-family:Poppins ;
+.hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
 }
 
-#hero{
+.hero>img {
+    position: absolute;
     width: 100%;
-    height: calc(100vh);
-    background: url("../images/search.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    animation: display 20s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+img:nth-child(4) {
+    animation-delay: 12s;
+}
+
+img:nth-child(5) {
+    animation-delay: 16s;
+}
+
+
+@keyframes display {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.features-container{
     display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: space-evenly;
+}
+
+.features{
+    position: relative;
+    padding: 0;
+    margin: 0%;
+}
+
+.features>img{
+    width:250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0%;
+    vertical-align: middle;
+}
+
+.features-list{
+    position: absolute;
+    padding: 0;
+    margin: 0%;
+    width: 100%;
+    min-height: 15%;
+    bottom: 0%;
+    left:0;
+    background: rgba(255, 255, 0,0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: min-height 250ms ease-in-out;
+}
+
+
+.features:hover .features-list{
+    min-height: 100%;
+}
+
+#programs{
+    margin: 4rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
-    padding-left: 4rem/* 64px */;
-    padding-right: 4rem/* 64px */;
     justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+li{
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+li:hover{
+    background: grey;
 }

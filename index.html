@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMAMIT NITTE</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NMAMIT NITTE</title>
+        <link rel="stylesheet" href="/styles/global.css">
+        <link rel="stylesheet" href="/styles/home.css">
+    </head>
 
-</head>
+    <body>
+        <header>
+            <img src="/images/nitte-nmamit-logo.png" alt="nitte-nmamit-logo">
 
-<body>
-    <header>
-        <img src="/images/nitte-nmamit-logo.png" alt="nitte-nmamit-logo">
-
-        <div class="hidden md:block  h-full">
-            <div class="h-full flex flex-row gap-4 items-center 
-        font-semibold ">
-        <span class="options"><a href="/">Home</a></span>
-        <span class="options"><a href="#footer">AboutUs</a></span>
-
-        <span class="dropdown">
-            <span class="options dropbtn">Departments</span>
-            <div class="dropdown-content">
-                <a href="deparments/aids.html">Artificial Intelligence & Data Science</a>
-                <a href="deparments/bio.html">Biotechnology</a>
-                <a href="deparments/civil.html">Civil Engineering</a>
-                <a href="deparments/cs.html">Computer Science & Engineering</a>
-                <a href="deparments/is.html">Information Science & Engineering</a>
-                <a href="deparments/mechanical.html">Mechanical Engineering</a>
+            <div class="hidden md:block  h-full">
+                <nav>
+                    <span class="options"><a href="/">Home</a></span>
+                    <span class="dropdown">
+                        <span class="options dropbtn">Departments</span>
+                        <div class="dropdown-content">
+                            <a href="/deparments/aids.html">Artificial Intelligence & Data Science</a>
+                            <a href="/deparments/bio.html">Biotechnology</a>
+                            <a href="/deparments/cs.html">Computer Science & Engineering</a>
+                            <a href="/deparments/is.html">Information Science & Engineering</a>
+                        </div>
+                    </span>
+                    <span class="options"><a href="/about.html">AboutUs</a></span>
+                </nav>
             </div>
-          </span>
-        </div>
-        </div>
-    </header>
+        </header>
 
-    <section id="hero">
-        <div class="bg-yellow-500 rounded-md p-4 font-extrabold text-4xl">
-            <p>NMAMIT NITTE</p>
-            <div class="bg-yellow-500 rounded-md p-4 font-bold text-lg mt-4">
+        <section class="hero">
+
+            <img src="images/banner1.jpg" alt="banner1">
+            <img src="images/banner2.jpg" alt="banner2">
+            <img src="images/banner3.jpg" alt="banner3">
+            <img src="images/banner4.jpg" alt="banner4">
+            <img src="images/twinning5.jpg" alt="banner4">
+        </section>
+
+        <section id="programs">
+            <h2>Programs</h2>
+
+            <ul>
+                <li><a href="deparments/aids.html">Artificial Intelligence & Data Science</a></li>
+                <li><a href="deparments/bio.html">Biotechnology</a></li>
+                <li><a href="deparments/civil.html">Civil Engineering</a></li>
+                <li><a href="deparments/cs.html">Computer Science & Engineering</a></li>
+                <li><a href="deparments/is.html">Information Science & Engineering</a></li>
+                <li><a href="deparments/mechanical.html">Mechanical Engineering</a></li>
+            </ul>
+        </section>
+
+        <section class="features-container">
+
+            <div class="features">
+                <img src="images/future-image-1.jpg" alt="future-image-1.jpg">
+                <div class="features-list">
+                </div>
+            </div>
+            <div class="features">
+                <img src="images/future-image-2.jpg" alt="future-image-1.jpg">
+                <div class="features-list">
+
+                </div>
+            </div>
+            <div class="features">
+                <img src="images/future-image-3.jpg" alt="future-image-1.jpg">
+                <div class="features-list">
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>About Us</h2>
+            <div>
                 <p>NMAM Institute of Technology</p>
-        <p>Nitte, Karkala Taluk</p>
-        <p>Udupi - 574110</p>
-        <p>Karnataka, India</p>
+                <p>Nitte, Karkala Taluk</p>
+                <p>Udupi - 574110</p>
+                <p>Karnataka, India</p>
             </div>
-        </div>
-    </section>
 
-    <section id="programs">
-        <h2 class="text-lg font-bold">Programs</h2>
-
-        <ul  class="flex flex-col gap-4">
-            <li><a href="deparments/aids.html">Artificial Intelligence & Data Science</a></li>
-            <li><a href="deparments/bio.html">Biotechnology</a></li>
-            <li><a href="deparments/civil.html">Civil Engineering</a></li>
-            <li><a href="deparments/cs.html">Computer Science & Engineering</a></li>
-            <li><a href="deparments/is.html">Information Science & Engineering</a></li>
-            <li><a href="deparments/mechanical.html">Mechanical Engineering</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <h2>About Us</h2>
-        <div>
-            <p>NMAM Institute of Technology</p>
-        <p>Nitte, Karkala Taluk</p>
-        <p>Udupi - 574110</p>
-        <p>Karnataka, India</p>
-        </div>
-
-        <div>
-            <p>+91-8258-281039</p>
-            <p>principal_nmamit@nitte.edu.in</p>
-        </div>
-
-
-        <div>
-            <span>@2022 copyright Nitte, Mangalore</span>
-        </div>
-
-
-    </footer>
-</body>
+            <div>
+                <p>+91-8258-281039</p>
+                <p>principal_nmamit@nitte.edu.in</p>
+            </div>
+            <hr>
+            <p>@2022 copyright Nitte, Mangalore</p>
+        </footer>
+    </body>
 
 </html>

@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/header.css">
-   
-</head>
-<body>
-    <header class="flex flex-row h-20 p-4 justify-between px-16 w-full bg-gray-400 sticky top-0 left-0">
-        <img src="images/nitte-nmamit-logo.png" alt="nitte-nmamit-logo">
 
-        <div class="hidden md:block  h-full">
-            <div class="h-full flex flex-row gap-4 items-center 
-        font-semibold ">
-            <span ><a href="/">Home</a></span>
-            <span><a href="#footer">AboutUs</a></span>
-            <span><a href="#footer">contactUs</a></span>
-        </div>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NMAMIT NITTE</title>
+        <link rel="stylesheet" href="/styles/global.css">
+        <link rel="stylesheet" href="/styles/department.css">
+    </head>
 
+    <body>
+        <header>
+            <img src="/images/nitte-nmamit-logo.png" alt="nitte-nmamit-logo">
 
-    <section>
-        Bachelor of Technology in Artificial Intelligence and Data Science (AI & DS), is a new engineering program aiming to create experts in the domain of data science. It enables the students to acquire technical skills to perform data processing, analysis and visualization in multiple real-time applications. The courses studied in this branch relate with methodologies, processes, techniques and tools drawn from different domains of computing and information science to extract knowledge from structured and unstructured data.
+            <div class="hidden md:block  h-full">
+                <nav>
+                    <span class="options"><a href="/">Home</a></span>
+                    <span class="dropdown">
+                        <span class="options dropbtn">Departments</span>
+                        <div class="dropdown-content">
+                            <a href="/deparments/aids.html">Artificial Intelligence & Data Science</a>
+                            <a href="/deparments/bio.html">Biotechnology</a>
+                            <a href="/deparments/cs.html">Computer Science & Engineering</a>
+                            <a href="/deparments/is.html">Information Science & Engineering</a>
+                        </div>
+                    </span>
+                    <span class="options"><a href="#footer">AboutUs</a></span>
+                </nav>
+            </div>
+        </header>
 
-The concepts studied in AI & DS cover the applications of mathematical concepts for data handling, study of various methods followed for data handling and analysis, applications of data analysis in the domain of artificial intelligence.
+        <section class="hero">
+            <img src="/images/biotechnology-engineering.jpg" alt="">
 
-The knowledge acquired could be applied in designing the software systems facilitating intelligent decisions in business applications. It is a specialized branch that deals with the development of data-driven solutions, data visualization tools and techniques to analyze big data. It also incorporates the concepts of machine learning and deep learning model building for solving various computational and real-world problems.
-    </section>
-</body>
+            <div class="detail">
+                <h2>biotechnology</h2>
+                <p>UG INTAKE 60</p>
+                <p>Duration 4 years</p>
+            </div>
+
+        </section>
+
+        <article>
+            <p>The Department of biotechnology, established in 1986, offers UG, PG and research (leading to M.Sc. and
+                Ph.D.) programs. The Department practices outcome-based education since 2014. With state-of-the-art
+                laboratories and other supporting facilities to provide enhanced learning environment, the Department
+                boasts of well qualified teaching faculty with rich research, teaching and industrial experience.</p>
+
+            <p>
+                The Department has excellent placement track record in reputed industries with an average of 80 – 85%
+                placement of eligible students over the years. The Department regularly conducts audit courses, and
+                special courses on advanced topics, to bridge the gap between the curriculum and the need of the
+                industry.
+            </p>
+        </article>
+
+        <footer>
+            <h2>About Us</h2>
+            <div>
+                <p>NMAM Institute of Technology</p>
+                <p>Nitte, Karkala Taluk</p>
+                <p>Udupi - 574110</p>
+                <p>Karnataka, India</p>
+            </div>
+
+            <div>
+                <p>+91-8258-281039</p>
+                <p>principal_nmamit@nitte.edu.in</p>
+            </div>
+            <hr>
+            <p>@2022 copyright Nitte, Mangalore</p>
+        </footer>
+    </body>
+
 </html>
-
-
-<footer class="flex w-full items-center justify-center flex-col gap-4 mt-8 bg-black text-white py-8  text-center">
-    <h2>About Us</h2>
-    <div>
-        <p>NMAM Institute of Technology</p>
-    <p>Nitte, Karkala Taluk</p>
-    <p>Udupi - 574110</p>
-    <p>Karnataka, India</p>
-    </div>
-
-    <div>
-        <p>+91-8258-281039</p>
-        <p>principal_nmamit@nitte.edu.in</p>
-    </div>
-
-
-    <div>
-        <span>@2022 copyright Nitte, Mangalore</span>
-    </div>
-
-
-</footer>
