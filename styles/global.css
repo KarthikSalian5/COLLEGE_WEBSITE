@@ -110,3 +110,12 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+#social-links{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+}
